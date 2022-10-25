@@ -1,0 +1,111 @@
+body {
+    font-family: 'Raleway', sans-serif;/*используем шрифт с гугл*/
+    color: #213053;/*цвет глубокий синий*/
+    margin: 0;/*обнуление полей по умолчанию*/
+
+  }
+
+header {
+    display: flex;/*flex-контейнер*/
+    justify-content: space-between;/*Распределить логотип влево, ссылку Контакты и кнопку Заказать вправо*/
+    align-items: center;/*Отцентровать все по вертикали*/
+    padding: 20px;/*внутренний отступ всей шапке*/
+
+  }
+
+.header__logo {
+    height: 30px;/*высота логотипа*/
+  }
+
+a {
+    text-decoration: none;/*убрать подчеркивание всех ссылок*/
+    color: #213053;
+  }
+
+header a {/*селектор header a - для всех тегов <а> внутри <header>*/
+    font-size: 15px;/*размер шрифта*/
+    font-weight: 600;/*толщина шрифта*/
+    margin-right: 25px;/*поле внешнее*/
+  }
+
+button {/*стили для всех кнопок*/
+    font-family: 'Raleway', sans—serif;/*семейство шрифтов*/
+    font-size: 15px;/*размер шрифта*/
+    color: #fff;/*цвет текста-белый*/
+    background-color: #23a030;/*цвет фона кнопки, зеленый*/
+    border: none;/*чтобы не было границы у кнопки*/
+    border-radius: 15px;/*скругление кнопки*/
+    cursor: pointer;/*при наведении на кнопку мышка в виде указателя*/
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);/*рисует тень. 0 — отступ тени по горизонтали, 16px — отступ по вертикали, 36px — размытость тени, rgb(52 213 68 / 22%) — это цвет тени*/
+    padding: 15px;/*внутренний отступ*/
+    
+  }
+
+.about {/*фон для всей секции about*/
+    display: flex; /*flex-контейнер*/
+    justify-content: space-around;/*Распределение внутренних элементов */
+    align-items: center;/*отцентриров по вертикали*/
+    padding-top: 115px;/*верхний отступ*/
+    padding-bottom: 115px;/*нижний отступ*/
+    background: url('img/back.png') no-repeat;/*фон будет картинкой по адресу url- не повторять*/
+    background-position: center;/*картинка по середине блока*/
+    background-size: cover;/*картинка растягивается под размер секции*/
+}
+
+.about__image {/*стиль для солн панели*/
+    width: 500px;
+  }
+   
+.about__sun-image {/*стиль для солнца*/
+    width: 100px;
+    height: 100px;
+  }
+
+  .about h1 {/*стиль для заголовка*/
+    font-size: 70px;/*размер шрифта*/
+    line-height: 76px;/*высота строчки*/
+  }
+
+  .about button {/*стиль для кнопки*/
+    font-size: 18px;/*размер шрифта*/
+    border-radius: 20px;/*закругление кнопки*/
+    padding: 20px 25px;/*внутренний отступ свр сниз 20, слв спрв 25*/
+    margin-top: 20px;/*внешний отступ свр 20*/
+  }
+
+  .about p {/*стиль для абзаца текста*/
+    font-size: 18px; /*размер шрифта*/
+    line-height: 30px;/*высота строчки*/
+    opacity: 0.8;/*прозрачность текста*/
+  }
+
+  .about__info {/*стил для <div class="about__info"> … </div>*/
+    max-width: 550px;/* максм ширина области с текстом*/
+  }
+
+  .form {/*стиль секции форм*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D263A;/*цвет фона*/
+    color: #fff;/*цвет текста белый*/
+    padding-top: 115px;/*внутрн отступ сверху*/
+    padding-bottom: 115px;/*внутр отступ снизу*/
+    text-align: center;/*текст по центру*/
+    
+  }
+
+  .form__container {/*стиль для контейнер с формами*/
+    width: 550px;/*ширина*/
+  }
+
+  .form h1 {/*заголовок формы*/
+    font-size: 48px;/*размер текста*/
+  }
+
+  .form p {/*подзаголовок формы*/
+    font-size: 18px;/*размер текста*/
+    opacity: 0.65;/*прозрачность*/
+  }
+
+  
